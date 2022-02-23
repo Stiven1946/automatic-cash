@@ -1,4 +1,4 @@
-package dto;
+package com.stiven1946.automaticcash.dto;
 
 public class tarjetaDto {
 
