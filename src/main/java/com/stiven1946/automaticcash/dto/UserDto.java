@@ -5,6 +5,7 @@ public class UserDto {
     public String nameHolder;
     public Integer documentHolder;
     public Integer phone;
+    public CardDto card;
 
     public String getNameHolder() {
         return nameHolder;
@@ -28,5 +29,13 @@ public class UserDto {
 
     public void setPhone(Integer phone) {
         this.phone = phone;
+    }
+
+    public CardDto getCard() {
+        return card;
+    }
+
+    public void setCard(CardDto card) {
+        this.card = card;
     }
 }

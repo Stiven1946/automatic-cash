@@ -7,6 +7,7 @@ public class CardDto {
     public Integer identifierSystem;
     public Integer numberValidation;
     public Integer condition;
+    public UserDto user;
 
     public Integer getCardNumber() {
         return cardNumber;
@@ -46,5 +47,13 @@ public class CardDto {
 
     public void setCondition(Integer condition) {
         this.condition = condition;
+    }
+
+    public UserDto getUser() {
+        return user;
+    }
+
+    public void setUser(UserDto user) {
+        this.user = user;
     }
 }

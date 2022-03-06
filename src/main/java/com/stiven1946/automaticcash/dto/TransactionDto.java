@@ -6,6 +6,7 @@ public class TransactionDto {
     public Integer referenceNumber;
     public Integer totalPurchase;
     public String directionPurchase;
+    public CardDto card;
 
     public Integer getIdentifierSystem() {
         return identifierSystem;
@@ -37,5 +38,13 @@ public class TransactionDto {
 
     public void setDirectionPurchase(String directionPurchase) {
         this.directionPurchase = directionPurchase;
+    }
+
+    public CardDto getCard() {
+        return card;
+    }
+
+    public void setCard(CardDto card) {
+        this.card = card;
     }
 }
