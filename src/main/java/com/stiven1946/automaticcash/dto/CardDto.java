@@ -1,5 +1,7 @@
 package com.stiven1946.automaticcash.dto;
 
+import java.util.ArrayList;
+
 public class CardDto {
 
     public Integer cardNumber;
@@ -8,6 +10,7 @@ public class CardDto {
     public Integer numberValidation;
     public Integer condition;
     public UserDto user;
+    public ArrayList quantityCards;
 
     public Integer getCardNumber() {
         return cardNumber;
@@ -55,5 +58,13 @@ public class CardDto {
 
     public void setUser(UserDto user) {
         this.user = user;
+    }
+
+    public ArrayList getQuantityCards() {
+        return quantityCards;
+    }
+
+    public void setQuantityCards(ArrayList quantityCards) {
+        this.quantityCards = quantityCards;
     }
 }

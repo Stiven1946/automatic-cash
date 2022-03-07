@@ -1,5 +1,7 @@
 package com.stiven1946.automaticcash.dto;
 
+import java.util.ArrayList;
+
 public class TransactionDto {
 
     public Integer identifierSystem;
@@ -7,6 +9,7 @@ public class TransactionDto {
     public Integer totalPurchase;
     public String directionPurchase;
     public CardDto card;
+    public ArrayList amountTransactions;
 
     public Integer getIdentifierSystem() {
         return identifierSystem;
@@ -46,5 +49,13 @@ public class TransactionDto {
 
     public void setCard(CardDto card) {
         this.card = card;
+    }
+
+    public ArrayList getAmountTransactions() {
+        return amountTransactions;
+    }
+
+    public void setAmountTransactions(ArrayList amountTransactions) {
+        this.amountTransactions = amountTransactions;
     }
 }
